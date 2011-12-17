@@ -8,6 +8,7 @@
 !!python/unicode 'media/meta.yaml': [root.j2]
 !!python/unicode 'navilan/index.html': [root.j2]
 !!python/unicode 'navilan/poems/kolaveri.html': [root.j2, poem.j2]
+!!python/unicode 'navilan/poems/lullaby.html': [root.j2, poem.j2]
 !!python/unicode 'navilan/poems/thuyil.html': [root.j2, poem.j2]
 !!python/unicode 'navilan/poems/vow.html': [root.j2, poem.j2]
 !!python/unicode 'navilan/posts/meta.yaml': []
