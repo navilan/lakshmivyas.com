@@ -6,11 +6,9 @@
 <li>
 <a href="{{ content_url(res.url) }}">
 <div class="cover{{ ' empty' if not res.meta.cover }}">
-<center>
 {% if res.meta.cover -%}
     <img class="cover" src="{{ media_url('images/'~res.meta.cover.url) }}">
 {%- endif %}
-</center>
 </div>
 <span class="title">{{ res.meta.title|e }}</span>
 <span class="subtitle">{{ res.meta.subtitle|e }}</span>

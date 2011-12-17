@@ -3,4 +3,4 @@ mode: production
 publisher:
     default:
         type: hyde.ext.publishers.pyfs.PyFS
-        url: s3://lakshmivyas.com
+        url: s3://www.lakshmivyas.com

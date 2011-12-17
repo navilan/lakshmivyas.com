@@ -36,12 +36,17 @@
         .cover
             margin-top 2px
             height 200px
-            position relative
+            display table-cell
+            vertical-align middle
+            text-align center
+            width 200px
+            margin 0 auto
+            
             img
                 max-width 200px
                 max-height 200px
                 height auto
-                absolute bottom
+                display inline
                 
             &.empty
                 background transparent url('/media/images/post.png') no-repeat center center
