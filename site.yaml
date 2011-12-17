@@ -1,0 +1,32 @@
+mode: development
+media_root: media
+media_url: /media
+base_url: /
+template: hyde.ext.jinja2
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.stylus.StylusPlugin
+    - hyde.ext.plugins.blockdown.BlockdownPlugin
+    - hyde.ext.plugins.sorter.SorterPlugin
+    - hyde.ext.plugins.markings.MarkingsPlugin
+    - hyde.ext.plugins.markings.ReferencePlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.uglify.UglifyPlugin
+meta:
+    author: Lakshmi Vyas
+markdown:
+    extensions:
+        - passthrough
+        - def_list
+        - headerid
+uglify:
+    include_paths: 'media/js'
+sorter:
+    created:
+        attr:
+            - meta.created
+        filters:
+            is_processable: true
+            source.kind: html

@@ -1,0 +1,19 @@
+{
+  "author": "Lakshmi Vyas <lakshmi.vyas@gmail.com> (http://lakshmivyas.com)",
+  "name": "lakshmivyas.com",
+  "description": "Source for lakshmivyas.com",
+  "version": "0.0.1",
+  "homepage": "http://lakshmivyas.com",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:lakshmivyas/lakshmivyas.git"
+  },
+  "engines": {
+    "node": "~v0.4.11"
+  },
+  "dependencies": {
+      "stylus":">=0.20.1",
+      "nib":">=0.3.1"
+  },
+  "devDependencies": {}
+}

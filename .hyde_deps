@@ -1,0 +1,4 @@
+!!python/unicode 'index.html': [root.j2]
+!!python/unicode 'media/css/site.styl': []
+!!python/unicode 'media/meta.yaml': [root.j2]
+!!python/unicode 'navilan/index.html': []

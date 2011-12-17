@@ -1,0 +1,13 @@
+white #ededed,
+black #222,
+body {
+  color: #000;
+  background-color: #fff;
+}
+.wrap {
+  width: 1026px;
+  margin: 0 auto;
+}
+#pageheader {
+  background-color: #ccc;
+}

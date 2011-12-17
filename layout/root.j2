@@ -1,0 +1,25 @@
+{% set self, meta = (resource, resource.meta) -%}
+<!doctype html>
+<html>
+    <head>
+        {% block css -%}
+        <link rel="stylesheet" href="{{ media_url('css/site.css') }}" type="text/css">
+        {%- endblock %}
+    </head>
+    <body>
+        <div class="wrap">
+            <header id="pageheader">
+                {% block header -%}
+                <h1>{{ meta.title }}</h1>
+                <h2>{{ meta.subtitle }}</h2>
+                {%- endblock %}
+            </header>
+            <article id="main">
+                {% filter markdown|typogrify -%}{% block content -%}{%- endblock %}{%- endfilter %}
+            </article>
+            <footer id="pagefooter">
+                {% block footer %}{%- endblock %}
+            </footer>
+        </div>
+    </body>
+</html>
