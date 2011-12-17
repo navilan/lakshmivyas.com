@@ -4,14 +4,19 @@
     <head>
         {% block css -%}
         <link rel="stylesheet" href="{{ media_url('css/site.css') }}" type="text/css">
+        {% for css in meta.css -%}
+        <link rel="stylesheet" href="{{ media_url('css/'~css~'.css') }}" type="text/css">
+        {%- endfor %}
         {%- endblock %}
+        <script type="text/javascript" src="http://use.typekit.com/orf0hue.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
         <div class="wrap">
             <header id="pageheader">
                 {% block header -%}
-                <h1>{{ meta.title }}</h1>
-                <h2>{{ meta.subtitle }}</h2>
+                <h1 class="mainhead">{{ meta.title|markdown|typogrify }}</h1>
+                <h2 class="subhead">{{ meta.subtitle|markdown|typogrify }}</h2>
                 {%- endblock %}
             </header>
             <article id="main">

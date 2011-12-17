@@ -1,16 +1,40 @@
-white #ededed
-black #222
+@import "_vars"
+
+global-reset()
+reset-html5()
 
 body
     color black
+    font-family "Helvetica", "Helvetica Neue", sans-serif
     background-color white
     margin 0
     padding 0
 
 .wrap
-    width 1026px
+    width 1024px
     margin 0 auto
+    padding 48px 0
+    box-shadow 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
     
 #pageheader
-    background-color #ccc
-    
+    margin-top 9px
+    text-align center
+    h1
+        font-size 48px
+        font-weight bold
+        line-height 64px
+        color almostblack
+        text-shadow 0px 2px 1px #fff
+
+    h2
+        font-size 16px
+        line-height 34px
+        font-weight light
+        padding-left 2px
+        color textgray
+
+.amp
+    font-family "Skia", Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif
+    font-size 110%
+    font-style italic
+    margin-left -1px

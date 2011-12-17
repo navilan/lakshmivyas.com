@@ -1,6 +1,28 @@
 ---
 title: Lakshmi Vyas
-subtitle: Sum of all the parts should make a difference
+subtitle: Summing the parts to make a difference
 extends: root.j2
 default_block: content
+css:
+    - home
+sections:
+    - 
+        name: Ringce
+        description: My work
+        link: http://ringce.com
+    - 
+        name: Tweets
+        description: Brain droppings
+        link: http://twitter.com/lakshmivyas
+    - 
+        name: Navilan
+        description: My tamil works
+        link: /navilan
 ---
+<nav>
+
+{% for item in meta.sections %}
+*   [{{ item.name }} **{{ item.description}}**]({{ item.link }})
+{% endfor %}
+
+</nav>

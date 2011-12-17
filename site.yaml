@@ -23,6 +23,9 @@ markdown:
         - headerid
 uglify:
     include_paths: 'media/js'
+stylus:
+    args:
+        include: node_modules/nib/lib
 sorter:
     created:
         attr:
