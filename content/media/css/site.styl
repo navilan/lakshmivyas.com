@@ -15,13 +15,10 @@ body
 
 .wrap
     clearfix()
-    background linear-gradient(bottom,  #ededed, #fff)
     width 1024px
-    border-radius bottom 10px
     margin 0 auto 24px
     padding 0 0 48px
-    box-shadow 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
-    
+
 #pageheader
     padding-top 57px
     text-align center
@@ -44,3 +41,28 @@ body
     font-size 110%
     font-style italic
     margin-left -1px
+    
+
+#pagefooter
+    position relative
+    bottom -72px
+    clearfix()
+    text-align center
+    li
+        list-style-type none
+        display inline
+        &:after
+            padding 12px
+            content '|'
+            color darken(gray, 5)
+        &:last-child:after
+            content ''
+            padding 0
+
+    a
+        color darken(gray, 12)
+        text-shadow 0px 1px 0px lighten(gray, 12)
+        text-decoration none
+        
+        &:hover
+            color textgray

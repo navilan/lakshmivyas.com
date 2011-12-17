@@ -27,9 +27,19 @@
                 {% filter markdown|typogrify -%}{% block content -%}{%- endblock %}{%- endfilter %}
             </article>
             {%- endblock %}
+            {% if not meta.nofooter -%}
             <footer id="pagefooter">
-                {% block footer %}{%- endblock %}
+                {% block footer %}
+                <nav>
+                    <ul>
+                        <li><a href="/">Lakshmi Vyas</a></li>
+                        <li><a href="/navilan">நவிலன்</a></li>
+                        <li><a href="http://twitter.com/lakshmivyas">Follow me</a></li>
+                    </ul>
+                </nav>
+                {%- endblock %}
             </footer>
+            {%- endif %}
         </div>
     </body>
 </html>

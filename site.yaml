@@ -34,3 +34,4 @@ sorter:
         filters:
             is_processable: true
             source.kind: html
+        reverse: true

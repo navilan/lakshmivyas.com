@@ -1,0 +1,64 @@
+@import "_vars"
+@import "_tealhead"
+@import "_box"
+
+.wrap
+    box()
+
+#pageheader 
+    h1, h2
+        text-align center
+
+#nodenav
+    padding 34px 16px
+    clearfix()
+
+    li
+        list-style-type none
+        width 200px
+        float left
+        font-size 12px
+        background linear-gradient(top, #ededed, #fff)
+        box-shadow 1px 4px 2px #ccc
+        margin-left 32px
+        padding 12px
+
+
+        &:hover
+            background linear-gradient(bottom, #ededed, #dcdcdc)
+            box-shadow 1px 4px 2px darkgray
+        a
+            text-decoration none
+
+        &:first-child
+            margin-left 0
+
+        .cover
+            margin-top 2px
+            height 200px
+            position relative
+            img
+                max-width 200px
+                max-height 200px
+                height auto
+                absolute bottom
+                
+            &.empty
+                background transparent url('/media/images/post.png') no-repeat center center
+
+        span
+            color textgray
+            text-align center
+            display block
+
+
+            &.title
+                font-size 14px
+                line-height 23px
+
+            &.subtitle
+                margin-top 7px
+                font-size 9px
+                line-height 12px
+
+
