@@ -3,33 +3,39 @@
 global-reset()
 reset-html5()
 
+html
+    background-color #ccc
+    
 body
     color black
+    background linear-gradient(top,  #ededed, #ccc)
     font-family "Helvetica", "Helvetica Neue", sans-serif
-    background-color white
     margin 0
     padding 0
 
 .wrap
+    clearfix()
+    background linear-gradient(bottom,  #ededed, #fff)
     width 1024px
-    margin 0 auto
-    padding 48px 0
+    border-radius bottom 10px
+    margin 0 auto 24px
+    padding 0 0 48px
     box-shadow 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
     
 #pageheader
-    margin-top 9px
+    padding-top 57px
     text-align center
     h1
         font-size 48px
         font-weight bold
-        line-height 64px
+        line-height 70px
         color almostblack
         text-shadow 0px 2px 1px #fff
 
     h2
-        font-size 16px
-        line-height 34px
-        font-weight light
+        font-size 24px
+        line-height 42px
+        font-weight 200
         padding-left 2px
         color textgray
 

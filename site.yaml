@@ -6,7 +6,6 @@ template: hyde.ext.jinja2
 plugins:
     - hyde.ext.plugins.meta.MetaPlugin
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
-    - hyde.ext.plugins.stylus.StylusPlugin
     - hyde.ext.plugins.blockdown.BlockdownPlugin
     - hyde.ext.plugins.sorter.SorterPlugin
     - hyde.ext.plugins.markings.MarkingsPlugin
@@ -14,7 +13,9 @@ plugins:
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
     - hyde.ext.plugins.uglify.UglifyPlugin
+    - hyde.ext.plugins.stylus.StylusPlugin
 meta:
+    nodemeta: meta.yaml
     author: Lakshmi Vyas
 markdown:
     extensions:

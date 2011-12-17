@@ -11,6 +11,7 @@
         {%- endblock %}
         <script type="text/javascript" src="http://use.typekit.com/orf0hue.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        {% block js -%}{%- endblock %}
     </head>
     <body>
         <div class="wrap">
@@ -20,9 +21,11 @@
                 <h2 class="subhead">{{ meta.subtitle|e }}</h2>
                 {%- endblock %}
             </header>
+            {% block main -%}
             <article id="main">
                 {% filter markdown|typogrify -%}{% block content -%}{%- endblock %}{%- endfilter %}
             </article>
+            {%- endblock %}
             <footer id="pagefooter">
                 {% block footer %}{%- endblock %}
             </footer>
