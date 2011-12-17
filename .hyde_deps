@@ -2,6 +2,7 @@
 !!python/unicode 'media/css/_mixins.styl': []
 !!python/unicode 'media/css/_vars.styl': []
 !!python/unicode 'media/css/home.styl': [media/css/_vars.styl]
+!!python/unicode 'media/css/navilan.styl': [media/css/_vars.styl]
 !!python/unicode 'media/css/site.styl': [media/css/_vars.styl]
 !!python/unicode 'media/meta.yaml': [root.j2]
-!!python/unicode 'navilan/index.html': []
+!!python/unicode 'navilan/index.html': [root.j2]

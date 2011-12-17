@@ -2,6 +2,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         {% block css -%}
         <link rel="stylesheet" href="{{ media_url('css/site.css') }}" type="text/css">
         {% for css in meta.css -%}
@@ -15,8 +16,8 @@
         <div class="wrap">
             <header id="pageheader">
                 {% block header -%}
-                <h1 class="mainhead">{{ meta.title|markdown|typogrify }}</h1>
-                <h2 class="subhead">{{ meta.subtitle|markdown|typogrify }}</h2>
+                <h1 class="mainhead">{{ meta.title|e }}</h1>
+                <h2 class="subhead">{{ meta.subtitle|e }}</h2>
                 {%- endblock %}
             </header>
             <article id="main">
