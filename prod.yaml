@@ -1,0 +1,6 @@
+extends: site.yaml
+mode: production
+publishers:
+    default:
+        type: hyde.ext.publishers.pyfs.PyFS
+        url: s3://lakshmivyas.com.s3-website-us-east-1.amazonaws.com/

@@ -14,6 +14,8 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
     - hyde.ext.plugins.uglify.UglifyPlugin
     - hyde.ext.plugins.stylus.StylusPlugin
+    - hyde.ext.plugins.optipng.OptiPNGPlugin
+    - hyde.ext.plugins.jpegoptim.JPEGOptimPlugin
 meta:
     nodemeta: meta.yaml
     author: Lakshmi Vyas
@@ -22,6 +24,7 @@ markdown:
         - passthrough
         - def_list
         - headerid
+
 uglify:
     include_paths: 'media/js'
 stylus:
