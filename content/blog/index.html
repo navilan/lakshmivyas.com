@@ -1,0 +1,12 @@
+---
+title: Blog
+subtitle: Non-technical essays
+extends: root.j2
+default_block: content
+css:
+    - listing
+---
+
+{% from "nav.j2" import nav with context %}
+
+{{ nav(node) }}
