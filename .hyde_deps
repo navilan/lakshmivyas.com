@@ -12,6 +12,7 @@
 !!python/unicode 'media/js/zepto.min.js': []
 !!python/unicode 'media/meta.yaml': [root.j2]
 !!python/unicode 'navilan/index.html': [root.j2, nav.j2]
+!!python/unicode 'navilan/poems/beach.html': [root.j2, poem.j2]
 !!python/unicode 'navilan/poems/index.html': [root.j2, nav.j2]
 !!python/unicode 'navilan/poems/kolaveri.html': [root.j2, poem.j2]
 !!python/unicode 'navilan/poems/lullaby.html': [root.j2, poem.j2]
