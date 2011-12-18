@@ -3,3 +3,5 @@ pyquery
 -e git://github.com/hyde/Python-Markdown.git#egg=Python-Markdown
 -e git://github.com/hyde/hyde.git#egg=hyde
 -e git://github.com/hyde/typogrify.git#egg=typogrify
+fs
+boto
