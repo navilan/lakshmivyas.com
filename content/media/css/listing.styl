@@ -21,8 +21,8 @@
         width 200px
         float left
         font-size 12px
-        background linear-gradient(top, black, textgray)
         box-shadow 1px 4px 2px gray
+        background linear-gradient(top, light2, medium2)
         margin 12px 0
         margin-left 24px
         padding 12px
@@ -33,13 +33,19 @@
             margin-left 0
 
         &:hover
-            background linear-gradient(bottom, black, darkgray)
-            box-shadow 1px 4px 2px darkgray
+            background linear-gradient(top, light2, medium1)
+            box-shadow 1px 4px 2px dark2
             
             span
-                color lighten(light1, 10)
+                color dark1
+                text-shadow 0px 1px 1px light2
+                
         a
             text-decoration none
+            color medium1
+            
+            &:hover
+                color light1
 
         &:first-child
             margin-left 0
@@ -64,9 +70,10 @@
                 background transparent url('/media/images/post.png') no-repeat center center
 
         span
-            color light
+            color textgray
             text-align center
             display block
+            text-shadow 0px 1px 1px light1
 
 
             &.title
