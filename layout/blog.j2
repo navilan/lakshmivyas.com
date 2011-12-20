@@ -40,17 +40,13 @@
             <ul>
                 <li>
                     <a class="main" href="/">
-                        <img src="{{ media_url('images/53-house.png') }}">
                         Lakshmi Vyas
                     </a>
-                    &raquo;
                 </li>
                 <li>
                     <a class="main" href="{{ content_url(node.module.url) }}">
-                        <img src="{{ media_url('images/104-index-cards.png') }}">
                         {{ node.module.meta.title|default(node.module.name)|e }}
                     </a>
-                    &raquo;
                 </li>
                 {% if meta.created -%}
                 <li>

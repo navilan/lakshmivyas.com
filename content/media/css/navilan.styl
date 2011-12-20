@@ -38,8 +38,15 @@ article
     margin-bottom 24px
 
     li
-        margin-right 12px
+        margin-right 4px
         display inline
+        
+        &:after
+            content ' »'
+            font-size 14px
+            
+        &:last-child:after
+            content ''
         
     img
     margin-right 4px
@@ -53,7 +60,7 @@ article
     .title
         overflow ellipsis
         display inline-block
-        width 64px
+        max-width 64px
 
 
 #share
@@ -114,7 +121,6 @@ article
     .cover
         clearfix()
         img
-            box-shadow 0 4px 12px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
             margin 0 auto
             max-width 400px
             height auto
