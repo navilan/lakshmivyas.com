@@ -8,9 +8,12 @@
 #pageheader 
     h1, h2
         text-align center
+        
+#pagefooter
+    relative bottom -48px
 
 #nodenav
-    padding 34px 16px
+    padding 34px 28px 0px
     clearfix()
 
     li
@@ -18,19 +21,23 @@
         width 200px
         float left
         font-size 12px
-        background linear-gradient(top, #ededed, #fff)
+        background linear-gradient(top, black, textgray)
         box-shadow 1px 4px 2px #ccc
         margin 12px 0
-        margin-left 32px
+        margin-left 24px
         padding 12px
+        border-radius 8px
         
         &:nth-child(5n+5)
             clear both
             margin-left 0
 
         &:hover
-            background linear-gradient(bottom, #ededed, #dcdcdc)
+            background linear-gradient(bottom, black, darkgray)
             box-shadow 1px 4px 2px darkgray
+            
+            span
+                color lighten(light, 10)
         a
             text-decoration none
 
@@ -50,13 +57,14 @@
                 max-width 200px
                 max-height 200px
                 height auto
+                width auto
                 display inline
                 
             &.empty
                 background transparent url('/media/images/post.png') no-repeat center center
 
         span
-            color textgray
+            color light
             text-align center
             display block
 

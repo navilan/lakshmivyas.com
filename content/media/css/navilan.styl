@@ -11,6 +11,9 @@
 .wrap
     margin-bottom 0
 
+#pagefooter
+    absolute bottom -80px
+    width 100%
 
 article
     padding 48px 12px 12px 64px
@@ -22,23 +25,28 @@ article
     text-shadow 0px 2px 1px #fff
     box()
 
+#main
+    min-height 600px
+
 #breadcrumb
     clearfix()
     padding 8px
     font-size 11px
-    border-bottom 1px dotted gray
+    border-bottom 1px dotted darkgray
     margin-bottom 24px
-    color darkgray
 
     li
         margin-right 12px
         display inline
+        
+    img
+    margin-right 4px
     a
         text-decoration none
-        color darkgray
+        color textgray
 
         &:hover
-            color teal
+            color black
 
     .title
         overflow ellipsis
@@ -50,7 +58,6 @@ article
     clearfix()
     padding 12px 0
     margin-top 24px
-    border-top 1px dotted darkgray
     border-bottom 1px dotted darkgray
 
 #twitter_share
@@ -61,14 +68,12 @@ article
     float left
 
 #sidebar
-    float right
     width 420px
+    float right
+    position relative
     margin 0 12px 48px
-    opacity 0.4
-
-    &:hover
-        opacity 1.0
-
+    min-height 600px
+    
     .related
         cursor pointer
         ul

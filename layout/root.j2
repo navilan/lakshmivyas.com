@@ -1,4 +1,4 @@
-{% set self, meta = resource, resource.meta -%}
+{% set self, meta, nofooter = resource, resource.meta, nofooter or resource.meta.nofooter  -%}
 {% set in_production = site.config.mode.startswith('prod') -%}
 <!doctype html>
 <html>
@@ -45,18 +45,10 @@
                 {% filter markdown|typogrify -%}{% block content -%}{%- endblock %}{%- endfilter %}
             </article>
             {%- endblock %}
-            {% if not meta.nofooter -%}
-            <footer id="pagefooter">
-                {% block footer %}
-                <nav>
-                    <ul>
-                        <li><a href="/">Lakshmi Vyas</a></li>
-                        <li><a href="/navilan">நவிலன்</a></li>
-                        <li><a href="http://twitter.com/lakshmivyas">Follow me</a></li>
-                    </ul>
-                </nav>
-                {%- endblock %}
-            </footer>
+            {% if not nofooter -%}
+            {% block footer -%}
+                {% include "footer.j2" %}
+            {%- endblock %}
             {%- endif %}
         </div>
     </body>

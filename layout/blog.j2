@@ -1,3 +1,4 @@
+{% set nofooter = True -%}
 {% macro sidebar(item) -%}
 <center>
 {% if item.type =='image' -%}
@@ -18,7 +19,6 @@
         frameborder="0" allowfullscreen>
 </iframe>
 {%- endmacro %}
-
 {% extends "root.j2" -%}
 {% block main -%}
 <div id="fb-root"></div>
@@ -92,6 +92,7 @@
             </ul>
         </div>
         {%- endif %}
+        {{ self.footer() }}
     </aside>
 </div>
 <script type="text/javascript">
@@ -99,6 +100,11 @@ $("div.related").bind('click', function(ev) {
     $(ev.currentTarget).toggleClass('selected');
     return false;
 });
+var articleHeight = $("#main").height();
+var sidebarHeight = $("#sidebar").height();
+
+$("#main, #sidebar").height(Math.max(articleHeight, sidebarHeight));
+
 </script>
 {%- endblock %}
 

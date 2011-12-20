@@ -4,11 +4,11 @@ global-reset()
 reset-html5()
 
 html
-    background-color #ccc
+    background-color light
     
 body
     color black
-    background linear-gradient(top,  #ededed, #ccc)
+    background linear-gradient(top,  dark, light)
     font-family "Helvetica", "Helvetica Neue", sans-serif
     margin 0
     padding 0
@@ -17,7 +17,7 @@ body
     clearfix()
     width 1024px
     margin 0 auto 24px
-    padding 0 0 48px
+    padding 0 0 12px
     
 
 #pageheader
@@ -45,24 +45,23 @@ body
     
 
 #pagefooter
-    position relative
-    bottom -72px
     clearfix()
     text-align center
+    font-size 12px
+    
     li
         list-style-type none
         display inline
         &:after
             padding 12px
             content '|'
-            color darken(gray, 5)
+            color lighten(dark, 20)
         &:last-child:after
             content ''
             padding 0
-
     a
-        color darken(gray, 12)
-        text-shadow 0px 1px 0px lighten(gray, 12)
+        color lighten(dark, 10)
+        text-shadow 0px 1px 0px lighten(light, 10)
         text-decoration none
         
         &:hover
